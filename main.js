@@ -12,5 +12,5 @@ function draw() {
 }
 
 function take_snapshot() {
-    
+    save("FilteredPhoto.png");
 }
