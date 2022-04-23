@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(240,126,71,1) 48%, rgba(224,148,233,1) 100%);
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ 
+ .btn-grad1 {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+ .btn-grad1 {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad1:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  canvas {
+      animation-name: BackgroundGlow;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes BackgroundGlow {
+      from {box-shadow: 1px 1px 30px lightgreen;}
+      20%  {box-shadow: 1px 1px 30px skyblue;}
+      40%  {box-shadow: 1px 1px 30px blue;}
+      60%  {box-shadow: 1px 1px 30px teal;}
+      80%  {box-shadow: 1px 1px 40px green;}
+      to   {box-shadow: 1px 1px 30px lightgreen;}
+  }
+ 
