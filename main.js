@@ -1,5 +1,9 @@
-function preload() {
+noseX = 0;
+noseY = 0;
+img = "";
 
+function preload() {
+img = loadImage("https://i.postimg.cc/sfGmHF6X/Mustache-Image.png");
 }
 
 function setup() {
@@ -14,6 +18,8 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 400, 400);
+    image(img, noseX - 180, noseY - 40, 40, 30);
+
 }
 
 function take_snapshot() {
@@ -27,7 +33,9 @@ function modelLoaded() {
 function gotPoses(results) {
     if(results.length > 0) {
         console.log(results);
-        console.log("Nose x = " + results[0].pose.nose.x);
-        console.log("Nose y = " + results[0].pose.nose.y);
+        noseX = results[0].pose.nose.x;
+        noseY = results[0].pose.nose.y;
+        console.log("Nose x = " + noseX);
+        console.log("Nose y = " + noseY);
     }
 }
