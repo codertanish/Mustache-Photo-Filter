@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
     image(video, 0, 0, 400, 400);
-    image(img, noseX - 180, noseY - 40, 40, 30);
+    image(img, noseX - 170, noseY - 40, 40, 30);
 
 }
 
